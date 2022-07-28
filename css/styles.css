@@ -4,11 +4,15 @@
 	--color-titles: #212121;
 	--color-text: #757575;
 	--color-fon: #f5f4fa;
+	--color-fon-banner: #2f303a;
+	--color-black: #000;
+	--main-button-accent: #188ce8;
+	--contacts-in-footer: rgba(255, 255, 255, 0.6);
 }
 
 body {
 	font-family: "Roboto", sans-serif;
-	background-color: #fff;
+	background-color: var(--main-title-color);
 	font-size: 14px;
 	letter-spacing: 0.03em;
 	color: var(--color-titles);
@@ -30,10 +34,10 @@ li {
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
-	color: #2196f3;
+	color: var(--accent-color);
 }
 .color-black {
-	color: #000;
+	color: var(--color-black);
 }
 .site-nav a:hover,
 .auth-nav a:hover,
@@ -55,12 +59,19 @@ li {
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	color: var(--colr-text);
+	color: var(--color-text);
+}
+.list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
 .banner {
-	background-color: #2f303a;
+	background-color: var(--color-fon-banner);
 }
 .banner-title {
+	margin-top: 0;
+	margin-bottom: 30;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -70,6 +81,7 @@ li {
 	color: var(--main-title-color);
 }
 .main-button {
+	display: inline-block;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.87;
@@ -80,11 +92,14 @@ li {
 	letter-spacing: 0.06em;
 	color: var(--main-title-color);
 	background-color: var(--accent-color);
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .main-button:hover,
 .main-button:focus {
 	color: var(--main-title-color);
-	background-color: #188ce8;
+	background-color: var(--main-button-accent);
 }
 .visually-hidden {
 	position: absolute;
@@ -129,28 +144,27 @@ li {
 }
 
 .team-card {
-	text-align: center;
 	background-color: var(--main-title-color);
 }
 .card-title {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.2;
-	text-align: center;
+
 	color: var(--color-titles);
 }
 .card-text {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.2;
-	text-align: center;
-	color: var(--colr-text);
+
+	color: var(--color-text);
 }
 footer {
-	background-color: #2f303a;
+	background-color: var(--color-fon-banner);
 }
 .color-white {
-	color: #fff;
+	color: var(--main-title-color);
 }
 address {
 	font-weight: 400;
@@ -162,7 +176,7 @@ address {
 }
 .mail,
 .tel {
-	color: rgba(255, 255, 255, 0.6);
+	color: var(--contacts-in-footer);
 }
 address a:hover,
 address a:focus {
@@ -182,7 +196,6 @@ address a:focus {
 }
 .filters button:hover,
 .filters button:focus {
-	cursor: pointer;
 	color: var(--main-title-color);
 	background-color: var(--accent-color);
 }
@@ -201,5 +214,12 @@ button {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.9;
-	color: var(--colr-text);
+	color: var(--color-text);
+}
+
+.container {
+	width: 1230px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
 }
