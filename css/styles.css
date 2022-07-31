@@ -56,7 +56,7 @@ button {
 	padding-right: 15px;
 	margin: 0 auto;
 }
-
+/* --------------------------ШАПКА------------------------ */
 .page-header {
 	
 	background-color: var(--main-title-color);
@@ -126,6 +126,8 @@ button {
 	margin: 0;
 	list-style: none;
 }
+
+/* ----------------------ГЕРОЙ------------------------ */
 .banner {
 	background-color: var(--color-fon-banner);
 	padding-top: 200px;
@@ -168,6 +170,8 @@ button {
 	color: var(--main-title-color);
 	background-color: var(--main-button-accent);
 }
+
+/* ----------------------------------ОСОБЕННОСТИ-------------------- */
 .peculiarities {
 	padding-top: 94px;
 	margin-bottom: 94px;
@@ -203,6 +207,9 @@ button {
 	line-height: 1.7;
 	color: var(--colr-text);
 }
+
+
+/* ---------------ЧЕМ МЫ ЗАНИМАЕСЯ------------------ */
 .doing {
 	background-color: var(--main-title-color);
 	padding-bottom: 94px;
@@ -223,11 +230,16 @@ button {
 	display: flex;
 	gap: 30px;
 }
+
+
+/* -------------------НАША КОМАНДА------------------------------ */
 .team {
 	background-color: var(--color-fon);
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 .team-title {
-	padding-top: 94px;
+	
 	margin-bottom: 50px;
 }
 .team-list {
@@ -251,7 +263,6 @@ button {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.2;
-
 	color: var(--color-titles);
 }
 .card-text {
@@ -259,18 +270,35 @@ button {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.2;
-
 	color: var(--color-text);
 }
-footer {
+
+
+/* ---------------------------------ПОДВАЛ------------------------------ */
+.footer {
 	background-color: var(--color-fon-banner);
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.logo-footer {
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--accent-color);
+	
+	margin-bottom: 20px;
 }
 .color-white {
 	color: var(--main-title-color);
 }
-address {
+.address {
 	font-weight: 400;
 	line-height: 1.7;
+	font-style: normal;
+}
+address {
 	font-style: normal;
 }
 .adr {
@@ -284,6 +312,9 @@ address a:hover,
 address a:focus {
 	color: var(--accent-color);
 }
+
+
+/* -----------------------------ПОРТФОЛИО------------------------------- */
 .portflio {
 	background-color: var(--main-title-color);
 	margin-bottom: calc(-1 * var(--card-set-gap));
